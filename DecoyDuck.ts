@@ -1,16 +1,21 @@
+/**
+ * * Clase derivada DecoyDuck, hereda de Duck, implementa IDisplay
+ */
 import { Duck } from './Duck'
 import { IDisplay} from './IDisplay'
-import { IFlyBehavior }   from './FlyStrategy'
-import { IQuackBehavior } from './QuackStrategy'
+import { FlyNoWay }   from './FlyStrategy'
+import { MuteQuack } from './QuackStrategy'
 
 export class DecoyDuck extends Duck implements IDisplay {
 
-    constructor(flyBehavior: IFlyBehavior, quackBehavior: IQuackBehavior) {
+    //  Definicion de constructor
+    constructor() {
         super()
-        this.flyBehavior = flyBehavior
-        this.quackBehavior = quackBehavior
+        this.flyBehavior = new FlyNoWay()
+        this.quackBehavior = new MuteQuack()
     }
 
+    //  Implementacion de metodo display
     display() {
         console.log(" - Decoy duck - ")
         this.swim()
