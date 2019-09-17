@@ -1,8 +1,8 @@
 # Typescript-DesignPatterns
 
 ##  requisitos
-> - nodejs <a href="https://nodejs.org" target="_blank">https://nodejs.org</a>
-> - typescript <a href="https://www.typescriptlang.org/" target="_blank">https://typescriptlang.org</a>
+> - nodejs <a href="#" onclick='window.open("https://nodejs.org");return false;'>https://nodejs.org</a>
+> - typescript <a href="#" onclick='window.open("https://www.typescriptlang.org/");return false;'>https://typescriptlang.org</a>
 
 ## Como correr los ejemplos (cualquier rama)
 
